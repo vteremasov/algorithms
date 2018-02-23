@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-vector<int> quick_sort(vector<int> list) {
+vector<int> quick_sort(vector<int> & list) {
   if(list.size() < 2) return list;
 
   int pivot = list[0];
