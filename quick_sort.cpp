@@ -16,8 +16,8 @@ vector<int> quick_sort(vector<int> list) {
       less.push_back(list[i]);
     }
   }
-  bigger = qSort(bigger);
-  less = qSort(less);
+  bigger = quick_sort(bigger);
+  less = quick_sort(less);
   less.push_back(pivot);
   less.insert(less.end(), bigger.begin(), bigger.end());
 
